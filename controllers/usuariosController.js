@@ -37,8 +37,8 @@ exports.crearUsuario = async(req,res)=>{
        );
 
     } catch (error) {
-       console.log('Hubo un Error');
+       console.log('Hubo un Error 1');
        console.log(error);
-       res.status(400).send('Hubo un Error') 
+       res.status(400).send('Hubo un Error 1') 
     }
 };

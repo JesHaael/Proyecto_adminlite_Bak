@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 ConectarBD();
 app.use(cors());
 //habiiltar expess.json
-app.use(express.json({extended: true}));
+app.use(express.json({extended: true}));//mirar
 // rutas de aplicacion
 
 //app.use(express.json());

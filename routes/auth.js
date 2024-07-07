@@ -10,11 +10,12 @@ const auth  = require('../middleware/auth');
 router.post('/',
     [
         check("email","agregar email valido").isEmail(),
-        check("pasword","El pasword de be tener 10 caracteres").isLength({
+        check("password","El pasword de_be tener 10 caracteres _Auth").isLength({
             min:10,
         }),
     ],
     authController.autenticarUsuario
 );
-router.get('/',auth,authController.usuarioAutenticado); 
+
+router.get('/', auth, authController.usuarioAutenticado); 
 module.exports = router;
