@@ -37,8 +37,9 @@ exports.crearUsuario = async(req,res)=>{
        );
 
     } catch (error) {
-       console.log('Hubo un Error 1');
+       console.log('Hubo un Error al crear usuario');
        console.log(error);
-       res.status(400).send('Hubo un Error 1') 
+       res.status(400).send('Hubo un Error al crear usuario') 
     }
 };
+
