@@ -16,6 +16,7 @@ app.use("/api/clientes", require("../routes/cliente"));
 app.use("/api/proveedores", require("../routes/proveedor"));
 app.use('/api/auth',require("../routes/auth"));
 app.use('/api/usuarios', require("../routes/usuarios"));
+app.use('/api/productos', require("../routes/producto"));
 
 app.get('/',(req, res) =>{
     res.send('Bienvenido estamos desde el navegador');
