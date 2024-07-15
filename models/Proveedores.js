@@ -29,4 +29,4 @@ const mongoose = require('mongoose');
     {versionkey: false}
 );
 
-module.exports = mongoose.model('Proveedor', proveedorSchema);
+module.exports = mongoose.model('Proveedores', proveedorSchema);
