@@ -1,3 +1,4 @@
+const Proveedores = require('../models/Proveedores');
 const Proveedor = require('../models/Proveedores'); 
 
 //funcion agregar clientes
@@ -14,10 +15,10 @@ exports.agregarProveedores = async(req,res)=>{
     }
 }
 
-//funcion que nos va a mostrar todos los clientes
+//funcion que nos va a mostrar todos los proveedores
 exports.mostrarProveedores = async(req,res)=>{
     try {
-        const proveedores = await Proveedor.find();
+        const proveedores = await Proveedores.find();
         res.json(proveedores);
 
     } catch (error) {
