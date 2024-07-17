@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 //el modelo que vamos a implementar debe sesr el mismo a la base de datos
-    const proveedorSchema = mongoose.Schema({
+    const proveedoresSchema = mongoose.Schema({
         nombres:{
             type: 'string',
             required: true,
@@ -29,4 +29,4 @@ const mongoose = require('mongoose');
     {versionkey: false}
 );
 
-module.exports = mongoose.model('Proveedores', proveedorSchema);
+module.exports = mongoose.model('Proveedores', proveedoresSchema);
